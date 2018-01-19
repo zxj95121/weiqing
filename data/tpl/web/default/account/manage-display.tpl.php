@@ -13,7 +13,7 @@
 	
 	
 		<?php  if(!$_W['isfounder'] && !empty($account_info['uniacid_limit'])) { ?>
-		<div class="alert alert-warning">
+		<div class="alert alert-warning hidden">
 			温馨提示：
 			<i class="fa fa-info-circle"></i>
 			Hi，<span class="text-strong"><?php  echo $_W['username'];?></span>，您所在的会员组： <span class="text-strong"><?php  echo $account_info['group_name'];?></span>
@@ -79,7 +79,7 @@
 	<tr class="color-gray" ng-repeat="list in lists">
 		<td class="text-left td-link">
 			<?php  if($role_type) { ?>
-			<a ng-href="{{links.post}}&acid={{list.acid}}&uniacid={{list.uniacid}}&account_type={{list.type}}">
+			<a ng-href="{{links.post}}&acid={{list.acid}}&uniacid={{list.uniacid}}&account_type={{list.type}}"></a>
 			<?php  } else { ?>
 			<a href="javascript:;">
 			<?php  } ?>
@@ -96,7 +96,7 @@
 			<span class="color-green" ng-if="list.isconnect == 1"><i class="wi wi-right-sign"></i>已接入</span>
 		</td>
 		<td>
-			<p ng-bind="list.setmeal.timelimit"></p>
+			<p ng-bind="list.end"></p>
 		</td>
 		<td><p ng-bind="list.sms"></p></td>
 		<td class="vertical-middle table-manage-td">

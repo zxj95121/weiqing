@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>无尽盘旋</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,target-densitydpi=device-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/GIF" href="favicon.ico">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+
+    <style>
+/* Code tidied up by ScrapBook */
+body { text-align: left; background: rgb(0, 0, 0) none repeat scroll 0% 0%; padding: 0px; border: 0px none; margin: 0px; height: 100%; }
+html { overflow: hidden; }
+div, canvas { display: block; margin: 0px auto; padding: 0px; border: 0px none; }
+#share_div{ position:fixed;top:0;z-index:6666;width:100%;height:100%; text-align:center;filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8; display:none;}
+#share_div img{width:100%;height:100%;}
+</style>
+
+</head>
+<body style="padding: 0px; border-width: 0px; border-style: none; border-color: -moz-use-text-color; margin: 0px;">
+<div style="position: relative; width: 480px; height: 800px; top: 0px;" id="gameDiv"><div id="canvasDiv" style="width: 480px; height: 800px;"><canvas id="egretCanvas" width="480" height="800" style="width: 480px; height: 800px;"></canvas></div></div>
+<script>var document_class = "Main";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<!--This part will be replaced during compiling, and to modify the document class, please go to the project directory and edit in the file of egretProperties. Jsonr-->
+
+<div id="share_div"><img src="resource/assets/wx_share.jpg" onClick="$('#share_div').hide();"></div>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    function getQueryString(name) { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        var r = window.location.search.substr(1).match(reg); 
+        if (r != null) return unescape(r[2]); return null; 
+    } 
+    var id=getQueryString("id");
+    var host=window.location.host;
+    $.post("http://"+host+"/app/index.php?i=8&c=entry&do=share&m=a_302s_egret",{id:id},function(res){
+        var json = eval("(" + res + ")");
+        wx.config({
+            debug: false, 
+            appId: json.appId, 
+            timestamp: json.timestamp, 
+            nonceStr: json.nonceStr, 
+            signature: json.signature,
+            jsApiList:['onMenuShareAppMessage','onMenuShareTimeline']
+        });       
+    });
+    $.post("http://"+host+"/app/index.php?i=8&c=entry&do=ajax&m=a_302s_egret", {id:id}, function(ret) {
+        var json = eval("(" + ret + ")");
+        if(json.msg==1){
+            sharedata = {
+                title: json.share_title,
+                desc: json.share_content,
+                link: "http://"+host+"/app/index.php?i=8&c=entry&do=index&m=a_302s_egret&id="+id,
+                imgUrl: "http://"+host+"/attachment/"+json.share_icon,
+                success: function(ret){
+                },
+                cancel: function(ret){
+                }
+            };
+            wx.onMenuShareAppMessage(sharedata);
+            wx.onMenuShareTimeline(sharedata);
+        }else if(json.msg==0){
+            alert('请从正规的路径进入');
+            setInterval(
+                function(){
+                wx.closeWindow();
+            },1000);
+        }
+    });
+
+
+
+</script>
+<script src="egret_require.js"></script>
+<script src="egret_loader.js"></script>
+<script src="game-min.js"></script>
+<script>
+    var support = [].map && document.createElement("canvas").getContext;
+    if (support) {
+        egret_h5.startGame();
+    }
+    else {
+        alert("Egret 不支持您当前的浏览器")
+    }
+</script>
+
+
+
+</body>
+</html>

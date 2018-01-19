@@ -8,8 +8,8 @@
 	<meta name="keywords" content="<?php  if(empty($_W['page']['copyright']['keywords'])) { ?><?php  if(IMS_FAMILY != 'x') { ?>微擎,微信,微信公众平台,we7.cc<?php  } ?><?php  } else { ?><?php  echo $_W['page']['copyright']['keywords'];?><?php  } ?>" />
 	<meta name="description" content="<?php  if(empty($_W['page']['copyright']['description'])) { ?><?php  if(IMS_FAMILY != 'x') { ?>公众平台自助引擎（www.we7.cc），简称微擎，微擎是一款免费开源的微信公众平台管理系统，是国内最完善移动网站及移动互联网技术解决方案。<?php  } ?><?php  } else { ?><?php  echo $_W['page']['copyright']['description'];?><?php  } ?>" />
 	<link rel="shortcut icon" href="<?php  if(!empty($_W['setting']['copyright']['icon'])) { ?><?php  echo $_W['attachurl'];?><?php  echo $_W['setting']['copyright']['icon'];?><?php  } else { ?>./resource/images/favicon.ico<?php  } ?>" />
-	<link href="./resource/css/bootstrap.min.css?v=20170915" rel="stylesheet">
-	<link href="./resource/css/common.css?v=20170915" rel="stylesheet">
+	<link href="./resource/css/bootstrap.min.css?v=20180115" rel="stylesheet">
+	<link href="./resource/css/common.css?v=20180115" rel="stylesheet">
 	<script type="text/javascript">
 	if(navigator.appName == 'Microsoft Internet Explorer'){
 		if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
@@ -34,12 +34,12 @@
 		'server' : {'php' : '<?php  echo phpversion()?>'},
 	};
 	</script>
-	<script>var require = { urlArgs: 'v=20170915' };</script>
+	<script>var require = { urlArgs: 'v=20180115' };</script>
 	<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="./resource/js/lib/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./resource/js/app/util.js?v=20170915"></script>
-	<script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
-	<script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
+	<script type="text/javascript" src="./resource/js/app/util.js?v=20180115"></script>
+	<script type="text/javascript" src="./resource/js/app/common.min.js?v=20180115"></script>
+	<script type="text/javascript" src="./resource/js/require.js?v=20180115"></script>
 </head>
 <body>
 	<div class="loader" style="display:none">

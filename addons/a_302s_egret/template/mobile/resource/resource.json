@@ -1,0 +1,56 @@
+{
+	"resources": [
+		{
+			"name": "bgImage",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egretIcon",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+		  "name": "bg",
+		  "type": "image",
+		  "url": "assets/bg.png"
+		},
+	    {
+		  "name": "gameover",
+		  "type": "image",
+		  "url": "assets/gameover.png"
+	     },
+		{
+		  "name": "share",
+		  "type": "image",
+		  "url": "assets/share.png"
+		},
+		{
+		  "name": "startBtn",
+		  "type": "image",
+		  "url": "assets/start.png"
+		},
+	   {
+		"name": "dui",
+		"type": "image",
+		"url": "assets/dui.png"
+	  },
+	  {
+		"name": "ts",
+		"type": "image",
+		"url": "assets/ts.png"
+	  }
+
+	],
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "bgImage,egretIcon,startBtn,share,gameover,bg,dui,ts"
+		}
+	]
+}

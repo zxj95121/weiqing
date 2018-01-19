@@ -1,0 +1,345 @@
+2018-01-18 10:29:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1516242577</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[方忠]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2018-01-18 10:29:48 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1516242577',
+    'msgtype' => 'text',
+    'content' => '方忠',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1516242577',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'reply',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'reply',
+    'content' => '方忠',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+      0 => 'basic',
+    ),
+  ),
+  'reply_type' => 
+  array (
+    0 => 'basic',
+  ),
+)
+
+2018-01-18 10:29:48 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : text ;
+Content : 张贤健好朋友😄 ;
+
+2018-01-18 10:36:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_2a083544c7cb]]></ToUserName>
+<FromUserName><![CDATA[oks-3wa0FmSs1mdksMmS9B6IR86c]]></FromUserName>
+<CreateTime>1516243001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[方忠]]></Content>
+<MsgId>6512214102553512006</MsgId>
+</xml>
+
+2018-01-18 10:36:41 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_2a083544c7cb',
+    'fromusername' => 'oks-3wa0FmSs1mdksMmS9B6IR86c',
+    'createtime' => '1516243001',
+    'msgtype' => 'text',
+    'content' => '方忠',
+    'msgid' => '6512214102553512006',
+    'from' => 'oks-3wa0FmSs1mdksMmS9B6IR86c',
+    'to' => 'gh_2a083544c7cb',
+    'time' => '1516243001',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'reply',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'reply',
+    'content' => '方忠',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+      0 => 'basic',
+    ),
+  ),
+  'reply_type' => 
+  array (
+    0 => 'basic',
+  ),
+)
+
+2018-01-18 10:36:41 response :
+------------
+Array:
+FromUserName : gh_2a083544c7cb ;
+ToUserName : oks-3wa0FmSs1mdksMmS9B6IR86c ;
+MsgType : text ;
+Content : 张贤健好朋友😄 ;
+
+2018-01-18 10:38:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_2a083544c7cb]]></ToUserName>
+<FromUserName><![CDATA[oks-3wTQJSdvGB6fLkkZtk6ybsHQ]]></FromUserName>
+<CreateTime>1516243084</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-01-18 10:38:04 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_2a083544c7cb',
+    'fromusername' => 'oks-3wTQJSdvGB6fLkkZtk6ybsHQ',
+    'createtime' => '1516243084',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oks-3wTQJSdvGB6fLkkZtk6ybsHQ',
+    'to' => 'gh_2a083544c7cb',
+    'time' => '1516243084',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-01-18 10:38:04 response :
+------------
+
+2018-01-18 10:38:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_2a083544c7cb]]></ToUserName>
+<FromUserName><![CDATA[oks-3wTQJSdvGB6fLkkZtk6ybsHQ]]></FromUserName>
+<CreateTime>1516243089</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[方忠]]></Content>
+<MsgId>6512214480510634080</MsgId>
+</xml>
+
+2018-01-18 10:38:09 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_2a083544c7cb',
+    'fromusername' => 'oks-3wTQJSdvGB6fLkkZtk6ybsHQ',
+    'createtime' => '1516243089',
+    'msgtype' => 'text',
+    'content' => '方忠',
+    'msgid' => '6512214480510634080',
+    'from' => 'oks-3wTQJSdvGB6fLkkZtk6ybsHQ',
+    'to' => 'gh_2a083544c7cb',
+    'time' => '1516243089',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'reply',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'reply',
+    'content' => '方忠',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+      0 => 'basic',
+    ),
+  ),
+  'reply_type' => 
+  array (
+    0 => 'basic',
+  ),
+)
+
+2018-01-18 10:38:09 response :
+------------
+Array:
+FromUserName : gh_2a083544c7cb ;
+ToUserName : oks-3wTQJSdvGB6fLkkZtk6ybsHQ ;
+MsgType : text ;
+Content : 张贤健好朋友😄 ;
+
+2018-01-18 10:43:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_2a083544c7cb]]></ToUserName>
+<FromUserName><![CDATA[oks-3wa0FmSs1mdksMmS9B6IR86c]]></FromUserName>
+<CreateTime>1516243384</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[方忠]]></Content>
+<MsgId>6512215747525986480</MsgId>
+</xml>
+
+2018-01-18 10:43:05 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_2a083544c7cb',
+    'fromusername' => 'oks-3wa0FmSs1mdksMmS9B6IR86c',
+    'createtime' => '1516243384',
+    'msgtype' => 'text',
+    'content' => '方忠',
+    'msgid' => '6512215747525986480',
+    'from' => 'oks-3wa0FmSs1mdksMmS9B6IR86c',
+    'to' => 'gh_2a083544c7cb',
+    'time' => '1516243384',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'reply',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '14',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'reply',
+    'content' => '方忠',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+      0 => 'basic',
+    ),
+  ),
+  'reply_type' => 
+  array (
+    0 => 'basic',
+  ),
+)
+
+2018-01-18 10:43:05 response :
+------------
+Array:
+FromUserName : gh_2a083544c7cb ;
+ToUserName : oks-3wa0FmSs1mdksMmS9B6IR86c ;
+MsgType : text ;
+Content : 方忠最牛逼⛄ ;
+
+2018-01-18 12:41:10 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_2a083544c7cb]]></ToUserName>
+<FromUserName><![CDATA[oks-3wa0FmSs1mdksMmS9B6IR86c]]></FromUserName>
+<CreateTime>1516250470</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[游戏]]></Content>
+<MsgId>6512246181664248949</MsgId>
+</xml>
+
+2018-01-18 12:41:10 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_2a083544c7cb',
+    'fromusername' => 'oks-3wa0FmSs1mdksMmS9B6IR86c',
+    'createtime' => '1516250470',
+    'msgtype' => 'text',
+    'content' => '游戏',
+    'msgid' => '6512246181664248949',
+    'from' => 'oks-3wa0FmSs1mdksMmS9B6IR86c',
+    'to' => 'gh_2a083544c7cb',
+    'time' => '1516250470',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'a_302s_egret',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '15',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'a_302s_egret',
+    'content' => '游戏',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+    'reply_type' => 
+    array (
+    ),
+  ),
+  'reply_type' => 
+  array (
+  ),
+)
+
+2018-01-18 12:41:10 response :
+------------
+Array:
+FromUserName : gh_2a083544c7cb ;
+ToUserName : oks-3wa0FmSs1mdksMmS9B6IR86c ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

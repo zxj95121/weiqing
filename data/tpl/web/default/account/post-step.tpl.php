@@ -8,7 +8,7 @@
 		</ol>
 		<div class="panel we7-panel">
 			<?php  if(!$_W['isfounder']) { ?>
-				<div class="alert alert-warning">
+				<div class="alert alert-warning hidden">
 					温馨提示：
 					<i class="fa fa-info-circle"></i>
 					Hi，<span class="text-strong"><?php  echo $_W['username'];?></span>，您所在的会员组： <span class="text-strong"><?php  echo $account_info['group_name'];?></span>，

@@ -1,7 +1,7 @@
 <?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 0) ? (include $this->template('common/header', TEMPLATE_INCLUDEPATH)) : (include template('common/header', TEMPLATE_INCLUDEPATH));?>
 <div class="panel panel-cut" id="js-account-display" ng-controller="AccountDisplay" ng-cloak>
 	<div class="panel-heading">
-		<i class="wi wi-wechat" style="font-size: 24px; margin-right: 10px; vertical-align:middle;"></i>请选择您要操作的公众号
+		<span class="panel-heading-left"><i class="wi wi-wechat" style="font-size: 24px; margin-right: 10px; vertical-align:middle;"></i>请选择您要操作的公众号</span>
 		<div class="font-default pull-right">
 			
 			
@@ -16,13 +16,10 @@
 	</div>
 	<div class="panel-body" >
 		<?php  if(!$_W['isfounder'] && !empty($account_info['uniacid_limit'])) { ?>
-			<div class="alert alert-warning">
+			<div class="alert alert-warning hidden">
 				温馨提示：
 				<i class="fa fa-info-circle"></i>
-				
-				
 				Hi，<span class="text-strong"><?php  echo $_W['username'];?></span>，您所在的会员组： <span class="text-strong"><?php  echo $account_info['group_name'];?></span>
-				
 				账号有效期限：<span class="text-strong"><?php  echo date('Y-m-d', $_W['user']['starttime'])?> ~~ <?php  if(empty($_W['user']['endtime'])) { ?>无限制<?php  } else { ?><?php  echo date('Y-m-d', $_W['user']['endtime'])?><?php  } ?></span>，
 				可创建 <span class="text-strong"><?php  echo $account_info['maxaccount'];?> </span>个公众号，已创建<span class="text-strong"> <?php  echo $account_info['uniacid_num'];?> </span>个，还可创建 <span class="text-strong"><?php  echo $account_info['uniacid_limit'];?> </span>个公众号。
 			</div>

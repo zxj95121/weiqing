@@ -38,8 +38,8 @@
 		<a href="<?php  echo url('account/post/base', array('uniacid' => $account['uniacid'], 'acid' => $account['acid'], 'account_type' => ACCOUNT_TYPE))?>" class="btn btn-default <?php  if($do == 'base') { ?> active<?php  } ?>">基础信息</a>
 		<?php  if(ACCOUNT_TYPE == ACCOUNT_TYPE_OFFCIAL_NORMAL) { ?>
 		<a href="<?php  echo url('account/post/sms', array('uniacid' => $account['uniacid'], 'acid' => $account['acid'], 'account_type' => ACCOUNT_TYPE))?>" class="btn btn-default <?php  if($do == 'sms') { ?> active<?php  } ?>">短信信息</a>
-	<?php  } ?>
-	<?php  } ?>
+		<?php  } ?>
+		<?php  } ?>
 	
 	<a href="<?php  echo url('account/post-user/edit', array('uniacid' => $account['uniacid'], 'acid' => $account['acid'], 'account_type' => ACCOUNT_TYPE))?>" class="btn btn-default <?php  if($action == 'post-user' && $do == 'edit') { ?> active<?php  } ?>">使用者管理</a>
 	<?php  if(ACCOUNT_TYPE == ACCOUNT_TYPE_APP_NORMAL) { ?>
